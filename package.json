@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Debysampaio/teste-ebac-ui-exercicio#readme",
   "devDependencies": {
     "cypress": "^8.6.0"
+  },
+  "dependencies": {
+    "faker": "^5.5.3"
   }
 }
