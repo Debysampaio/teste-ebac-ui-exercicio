@@ -1,0 +1,23 @@
+{
+  "name": "teste-ebac-ui-exercicio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Debysampaio/teste-ebac-ui-exercicio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Debysampaio/teste-ebac-ui-exercicio/issues"
+  },
+  "homepage": "https://github.com/Debysampaio/teste-ebac-ui-exercicio#readme",
+  "devDependencies": {
+    "cypress": "^8.6.0"
+  }
+}
