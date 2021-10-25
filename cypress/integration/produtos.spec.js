@@ -3,7 +3,7 @@
 describe('Funcionalidade pagina de produtos', () => {
 
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+        cy.visit('produtos/')
     });
 
     it('Deve selecionar um produto da lista', () => {
@@ -15,7 +15,7 @@ describe('Funcionalidade pagina de produtos', () => {
             .click()
     });
 
-    it.only('Deve adcionar um produto ao carrinho', () => {
+    it('Deve adcionar um produto ao carrinho', () => {
         var quantidade = 3
 
 
@@ -29,6 +29,14 @@ describe('Funcionalidade pagina de produtos', () => {
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain' , quantidade)
         cy.get('.woocommerce-message').should('contain' , quantidade + ' × “Ariel Roll Sleeve Sweatshirt” foram adicionados no seu carrinho.')
 
+    });
+
+    it('Deve adcionar produtos ao carrinho  - Usando Comando customizado', () => {
+        cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Black' ,3)
+    });
+
+    it.only('Deve adcionar produtos ao carrinho  - Usando Comando customizado', () => {
+        cy.addProdutos('Apollo Running Short', '32', 'Black' ,2)
     });
 
 });
